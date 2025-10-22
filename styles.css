@@ -38,3 +38,7 @@ h2{
     width: 65px;
     height: 65px;
 }
+footer{
+    background-color: hsl(233, 26%, 24%);
+    font-family: 'Public Sans';
+}
