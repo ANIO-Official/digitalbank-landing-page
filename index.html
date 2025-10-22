@@ -9,13 +9,14 @@
   <!--Add Font | Public Sans-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <!--Bootstrap CSS Library | CDN-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
   <!--Link CSS Sheet-->
-  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="styles.css" />
   <title>Frontend Mentor | Digitalbank landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -32,7 +33,7 @@
 </head>
 
 <body class="overflow-x-hidden">
-  <header class="ms-5" >
+  <header class="ms-5">
     <!--Use BS Navbar component-->
     <nav class="navbar navbar-expand-lg bg-white px-5">
       <div class="container-fluid px-5">
@@ -53,133 +54,137 @@
     </nav>
   </header>
 
-  <main class="ms-5">
+  <main class="">
     <!--Make a div 'container' to hold the BS grid for flexible design-->
-      <!--try reverse column for this section on mobile
+    <!--try reverse column for this section on mobile
         Set the background image in CSS,use media query for bg mobile-->
-      <section id="hero" class="px-5" >
-        <div class="container-fluid border-2 px-5 h-100">
-          <div  class="row d-flex flex-column flex-md-row">
-            <div class="col-4 ms-4 py-5">
-              <div class="card border-0 py-5 mt-5">
-                <div class="card-body">
-                  <h1 class="card-title fw-light">Next generation digital banking</h1>
-                  <p id="hero-sm-text" class="card-text text-secondary">
-                    Take your financial life online. Your Digitalbank account will be a one-stop-shop
-                    for spending, saving, budgeting, investing, and much more.
-                  </p>
-                  <button type="button" class="btn-lg rounded-pill px-4 py-2 border-0 me-5 mb-5">Request Invite</button>
-                </div>
+    <section id="hero" class="px-5">
+      <div class="container-fluid border-2 px-5 h-100">
+        <div class="row d-flex flex-column flex-md-row">
+          <div class="col-4 ms-4 py-5">
+            <div class="card bg-transparent border-0 py-5 mt-5">
+              <div class="card-body">
+                <h1 class="card-title fw-light">Next generation digital banking</h1>
+                <p id="hero-sm-text" class="card-text text-secondary">
+                  Take your financial life online. Your Digitalbank account will be a one-stop-shop
+                  for spending, saving, budgeting, investing, and much more.
+                </p>
+                <button type="button" class="btn-lg rounded-pill px-4 py-2 border-0 me-5 mb-5">Request Invite</button>
               </div>
             </div>
-            <div id="mockup-container" class="col d-flex justify-content-start justify-content-md-end">
-              <img id="mockup" src="images/image-mockups.png" class="w-auto h-auto p-1"/>
+          </div>
+          <div id="mockup-container" class="col d-flex justify-content-start justify-content-md-end">
+            <img id="mockup" src="images/image-mockups.png" class="w-auto h-auto p-1" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="about-bg">
+      <section id="about" class="container-fluid text-start m-0 px-5 py-5 ms-5">
+        <div id="about-head" class="mt-5 ms-4 px-5">
+          <h2 id="about-header">Why choose Digitalbank?</h2>
+          <p class="text-secondary mt-4" id="about-preface">We leverage Open Banking to turn your bank account into your
+            financial hub. Control your finances like never before.</p>
+        </div>
+        <div id="services-container" class="row row-cols-md-4 py-5 ms-2 me-5">
+          <div class="g-col-3 px-4">
+            <div class="card border-0 px-4 bg-transparent">
+              <img class="card-img-icon ms-3" src="images/icon-online.svg" />
+              <div class="card-body">
+                <h3 class="card-title fs-4 my-3">Online Banking</h3>
+                <p class="card-text text-secondary lh-lg">Our modern web and mobile applications allow you to keep track
+                  of your
+                  finances
+                  wherever you are in the world.</p>
+              </div>
+            </div>
+          </div>
+          <div class="g-col-3 px-4">
+            <div class="card border-0 px-4 bg-transparent">
+              <img class="card-img-icon ms-3" src="images/icon-budgeting.svg" />
+              <div class="card-body">
+                <h3 class="card-title fs-4 my-3">Simple Budgeting</h3>
+                <p class="card-text text-secondary lh-lg">See exactly where your money goes each month. Receive
+                  notifications
+                  when you’re close to hitting your limits.</p>
+              </div>
+            </div>
+          </div>
+          <div class="g-col-3 px-4">
+            <div class="card border-0 px-4 bg-transparent">
+              <img class="card-img-icon ms-3" src="images/icon-onboarding.svg" />
+              <div class="card-body">
+                <h3 class="card-title fs-4 my-3">Fast Onboarding</h3>
+                <p class="card-text text-secondary lh-lg">We don’t do branches. Open your account in minutes online and
+                  start taking control
+                  of your finances right away.</p>
+              </div>
+            </div>
+          </div>
+          <div class="g-col-3 px-3">
+            <div class="card border-0 px-3  bg-transparent">
+              <img class="card-img-icon ms-3" src="images/icon-api.svg" />
+              <div class="card-body">
+                <h3 class="card-title fs-4 my-3">Open API</h3>
+                <p class="card-text text-secondary lh-lg">Manage your savings, investments, pension, and much more from
+                  one account. Tracking
+                  your money has never been easier.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
-    <section id="about" class="container-fluid text-start mt-0 bg-light px-5 py-5">
-      <div id="about-head" class="mt-5 ms-4 px-5">
-        <h2  id="about-header">Why choose Digitalbank?</h2>
-        <p class="text-secondary mt-4" id="about-preface">We leverage Open Banking to turn your bank account into your
-          financial hub. Control your finances like never before.</p>
-      </div>
-      <div id="services-container" class="row row-cols-md-4 py-5 ms-2 me-5">
-        <div class="g-col-3 px-4">
-          <div class="card border-0 px-4 bg-transparent">
-            <img class="card-img-icon ms-3" src="images/icon-online.svg" />
-            <div class="card-body">
-              <h3 class="card-title fs-4 my-3">Online Banking</h3>
-              <p class="card-text text-secondary lh-lg">Our modern web and mobile applications allow you to keep track of your
-                finances
-                wherever you are in the world.</p>
+    </div>
+    <div class="articles-bg">
+      <section id="articles-section" class="container text-start my-5">
+        <h2 id="articles-title" class="py-5">Latest Articles</h2>
+        <div class="row row-col-md-4">
+          <div class="col">
+            <div class="card border-0">
+              <img class="card-img-top" src="images/image-currency.jpg" />
+              <div class="card-body">
+                <div class="card-subtitle text-secondary my-2">By Claire Robinson</div>
+                <div class="card-title fw-bold fs-5">Receive money in any currency with no fees</div>
+                <p class="card-text text-secondary ">The world is getting smaller and we’re becoming more mobile. So
+                  why should you be forced to only receive money in a single …</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0">
+              <img class="card-img-top" src="images/image-restaurant.jpg" />
+              <div class="card-body">
+                <div class="card-subtitle text-secondary my-2">By Wilson Hutton</div>
+                <div class="card-title fw-bold fs-5">Treat yourself without worrying about money</div>
+                <p class="card-text text-secondary ">Our simple budgeting feature allows you to separate out your
+                  spending and set realistic limits each month. That means you …</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0">
+              <img class="card-img-top" src="images/image-plane.jpg" />
+              <div class="card-body">
+                <div class="card-subtitle text-secondary my-2">By Wilson Hutton</div>
+                <div class="card-title fw-bold fs-5">Take your Digitalbank card wherever you go</div>
+                <p class="card-text text-secondary ">We want you to enjoy your travels. This is why we don’t charge
+                  any fees on purchases while you’re abroad. We’ll even …</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0">
+              <img class="card-img-top" src="images/image-confetti.jpg" />
+              <div class="card-body">
+                <div class="card-subtitle text-secondary my-2">By Claire Robinson</div>
+                <div class="card-title fw-bold fs-5">Our invite-only Beta accounts are now live!</div>
+                <p class="card-text text-secondary ">After a lot of hard work by the whole team, we’re excited to
+                  launch our closed beta. It’s easy to request an invite through ...</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="g-col-3 px-4">
-          <div class="card border-0 px-4 bg-transparent">
-            <img class="card-img-icon ms-3" src="images/icon-budgeting.svg"/>
-            <div class="card-body">
-              <h3 class="card-title fs-4 my-3">Simple Budgeting</h3>
-              <p class="card-text text-secondary lh-lg">See exactly where your money goes each month. Receive notifications
-                when you’re close to hitting your limits.</p>
-            </div>
-          </div>
-        </div>
-        <div class="g-col-3 px-4">
-          <div class="card border-0 px-4 bg-transparent">
-            <img class="card-img-icon ms-3" src="images/icon-onboarding.svg" />
-            <div class="card-body">
-              <h3 class="card-title fs-4 my-3">Fast Onboarding</h3>
-              <p class="card-text text-secondary lh-lg">We don’t do branches. Open your account in minutes online and start taking control
-                of your finances right away.</p>
-            </div>
-          </div>
-        </div>
-        <div class="g-col-3 px-3">
-          <div class="card border-0 px-3  bg-transparent">
-            <img class="card-img-icon ms-3" src="images/icon-api.svg" />
-            <div class="card-body">
-              <h3 class="card-title fs-4 my-3">Open API</h3>
-              <p class="card-text text-secondary lh-lg">Manage your savings, investments, pension, and much more from one account. Tracking
-               your money has never been easier.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--BS Grid-->
-    <section class="container text-start my-5" id="articles">
-      <h2 id="articles-title" class="py-5" >Latest Articles</h2>
-      <div class="row row-col-md-4">
-        <div class="col">
-          <div class="card">
-            <img class="card-img-top" src="images/image-currency.jpg" />
-            <div class="card-body shadow">
-              <div class="card-subtitle text-secondary">By Claire Robinson</div>
-              <div class="card-title fw-bold fs-5">Receive money in any currency with no fees</div>
-              <p class="card-text text-secondary">The world is getting smaller and we’re becoming more mobile. So 
-                why should you be forced to only receive money in a single …</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img class="card-img-top" src="images/image-restaurant.jpg" />
-            <div class="card-body shadow">
-              <div class="card-subtitle text-secondary">By Wilson Hutton</div>
-              <div class="card-title fw-bold fs-5">Treat yourself without worrying about money</div>
-              <p class="card-text text-secondary">Our simple budgeting feature allows you to separate out your 
-                spending and set realistic limits each month. That means you …</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img class="card-img-top" src="images/image-plane.jpg" />
-            <div class="card-body shadow">
-              <div class="card-subtitle text-secondary">By Wilson Hutton</div>
-              <div class="card-title fw-bold fs-5">Take your Digitalbank card wherever you go</div>
-              <p class="card-text text-secondary">We want you to enjoy your travels. This is why we don’t charge 
-                any fees on purchases while you’re abroad. We’ll even show you …</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img class="card-img-top" src="images/image-confetti.jpg" />
-            <div class="card-body shadow">
-              <div class="card-subtitle text-secondary">By Claire Robinson</div>
-              <div class="card-title fw-bold fs-5">Our invite-only Beta accounts are now live!</div>
-              <p class="card-text text-secondary">After a lot of hard work by the whole team, we’re excited to 
-                launch our closed beta. It’s easy to request an invite through the site ...</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
     </div>
   </main>
   <footer class="text-white">
@@ -188,14 +193,20 @@
         <div class="row w-100 px-5 d-flex align-items-start py-4">
           <!--Column 1 | Logo and socials, Flexbox column stack-->
           <div class="col d-flex flex-column align-items-start ms-5 ps-5">
-            <a class="navbar-brand" href="#"><img src="images/logo-light.svg" alt="Digital Bank Logo" width="auto" height="100%"></a>
-            <div id="socials" class="mt-1" >
+            <a class="navbar-brand" href="#"><img src="images/logo-light.svg" alt="Digital Bank Logo" width="auto"
+                height="100%"></a>
+            <div id="socials" class="mt-1">
               <ul class="list-group d-flex flex-lg-row">
-                <li class="list-group-item text bg-transparent border-0 px-2"><a href="www.facebook.com"><img src="images/icon-facebook.svg"/></a></li>
-                <li class="list-group-item text bg-transparent border-0 px-2"><a href="www.youtube.com"><img src="images/icon-youtube.svg"/></a></li>
-                <li class="list-group-item text bg-transparent border-0 px-2"><a href="www.x.com"><img src="images/icon-twitter.svg"/></a></li>
-                <li class="list-group-item text bg-transparent border-0 px-2"><a href="www.pinterest.com"><img src="images/icon-pinterest.svg"/></a></li>
-                <li class="list-group-item text bg-transparent border-0 px-2"><a href="www.instagram.com"><img src="images/icon-instagram.svg"/></a></li>
+                <li class="list-group-item text bg-transparent border-0 px-2"><a href="www.facebook.com"><img
+                      src="images/icon-facebook.svg" /></a></li>
+                <li class="list-group-item text bg-transparent border-0 px-2"><a href="www.youtube.com"><img
+                      src="images/icon-youtube.svg" /></a></li>
+                <li class="list-group-item text bg-transparent border-0 px-2"><a href="www.x.com"><img
+                      src="images/icon-twitter.svg" /></a></li>
+                <li class="list-group-item text bg-transparent border-0 px-2"><a href="www.pinterest.com"><img
+                      src="images/icon-pinterest.svg" /></a></li>
+                <li class="list-group-item text bg-transparent border-0 px-2"><a href="www.instagram.com"><img
+                      src="images/icon-instagram.svg" /></a></li>
               </ul>
             </div>
           </div>
@@ -213,8 +224,8 @@
           <!--Right/End align, on md make center align-->
           <div class="col d-flex flex-column align-items-end me-5 pe-5">
             <!--logo return to 'home'-->
-          <button class="btn-lg rounded-pill px-4 py-2 border-0 me-5" type="button">Request Invite</button>
-          <p class="mt-3">© Digitalbank. All Rights Reserved</p>
+            <button class="btn-lg rounded-pill px-4 py-2 border-0 me-5" type="button">Request Invite</button>
+            <p class="mt-3">© Digitalbank. All Rights Reserved</p>
           </div>
         </div>
       </div>

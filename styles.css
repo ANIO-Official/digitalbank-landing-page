@@ -7,6 +7,10 @@ button{
     background: linear-gradient(hsl(136, 64%, 51%), hsl(192, 69%, 51%));
     color: white;
 }
+footer{
+    background-color: hsl(233, 26%, 24%);
+    font-family: 'Public Sans';
+}
 /*Better to do h2 sizing here for consistency and simplicity*/
 /*Added h1 as well due to Bootstrap limitations for font sizing
  Scaling on Rem to reflect user base font size settings. Will adjust
@@ -19,9 +23,6 @@ h2{
     font-weight:normal;
 }
 /*Area specifics*/
-#about{
-    
-}
 #hero-sm-text{
     width: 21vw;
 }
@@ -32,6 +33,7 @@ h2{
 
 #hero{
     background-image: url(images/bg-intro-desktop.svg);
+    background-color: hsl(0, 0%, 98%);
     background-repeat: no-repeat;
     background-position-x: 45vw;
     background-position-y: -15vw;
@@ -47,7 +49,17 @@ h2{
     width: 65px;
     height: 65px;
 }
-footer{
-    background-color: hsl(233, 26%, 24%);
-    font-family: 'Public Sans';
+.articles-bg{
+    background-color: hsl(0, 0%, 98%);
+    margin-top: -3vw;
 }
+.about-bg{
+    background-color: hsl(220, 16%, 96%);
+}
+.card-img-top{
+    height: 200px;
+}
+.card-subtitle{
+    font-size: small;
+}
+
