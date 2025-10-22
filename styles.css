@@ -1,6 +1,7 @@
 body{
     color: hsl(233, 26%, 24%);
     font-family: 'Public Sans';
+    font-size: 18px;
 }
 button{
     background: linear-gradient(hsl(136, 64%, 51%), hsl(192, 69%, 51%));
@@ -9,7 +10,7 @@ button{
 /*Better to do h2 sizing here for consistency and simplicity*/
 /*Added h1 as well due to Bootstrap limitations for font sizing
  Scaling on Rem to reflect user base font size settings. Will adjust
- for users with default larger font in browser*/
+ for users with default larger font accessibility settings in browser*/
 h1{
     font-size: 4rem;
 }
@@ -17,10 +18,18 @@ h2{
     font-size: 2.8rem;
     font-weight:normal;
 }
+/*Area specifics*/
+#about{
+    
+}
+#hero-sm-text{
+    width: 21vw;
+}
 #mockup{
     margin-top: -15%;
-    margin-right: -22%;
+    margin-right: -21.5%;
 }
+
 #hero{
     background-image: url(images/bg-intro-desktop.svg);
     background-repeat: no-repeat;
@@ -28,11 +37,11 @@ h2{
     background-position-y: -15vw;
     height: 670px;
 }
-#about-container{
+#about-head{
     width: fit-content;
 }
 #about-preface{
-    width: 30vw;
+    width: 32vw;
 }
 .card-img-icon{
     width: 65px;
