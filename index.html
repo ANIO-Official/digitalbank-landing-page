@@ -29,10 +29,10 @@
 </head>
 
 <body>
-  <header>
+  <header >
     <!--Use BS Navbar component-->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid border px-5">
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container-fluid px-5">
         <!--logo return to 'home'-->
         <a class="navbar-brand ms-5" href="#">
           <img src="images/logo-dark.svg" alt="Digital Bank Logo" width="auto" height="100%">
@@ -57,29 +57,29 @@
       <!--try reverse column for this section on mobile
         Set the background image in CSS,use media query for bg mobile-->
       <section class="" id="hero">
-        <div class="container">
+        <div class="container-fluid border border-warning px-5">
           <div class="row">
-            <div class="col">
-              <div class="card border-0">
+            <div class="col-4 ms-4 py-5">
+              <div class="card border-0 py-5">
                 <div class="card-body">
                   <h1 class="card-title">Next generation digital banking</h1>
                   <p class="card-text text-secondary">
                     Take your financial life online. Your Digitalbank account will be a one-stop-shop
                     for spending, saving, budgeting, investing, and much more.
                   </p>
-                  <button type="button" class="btn-lg rounded-pill px-4 py-2 border-0 me-5">Request Invite</button>
+                  <button type="button" class="btn-lg rounded-pill px-4 py-2 border-0 me-5 mb-5">Request Invite</button>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <img class="border w-100 h-100 p-1" />
+            <div class="col border border-primary d-flex justify-content-end">
+              <img id="mockup" src="images/image-mockups.png" class="border w-auto h-auto p-1"/>
             </div>
           </div>
         </div>
     </div>
     </section>
 
-    <section class="container text-start" id="about">
+    <section class="container-fluid text-start mt-0 bg-light px-5 py-5" id="about">
       <div class="" id="about-container">
         <h2 class="" id="about-header">Why choose Digitalbank?</h2>
         <p class="text-secondary" id="about-preface">We leverage Open Banking to turn your bank account into your
