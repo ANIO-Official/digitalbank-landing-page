@@ -1,9 +1,21 @@
 body{
     color: hsl(233, 26%, 24%);
+    font-family: 'Public Sans';
 }
 button{
     background: linear-gradient(hsl(136, 64%, 51%), hsl(192, 69%, 51%));
     color: white;
+}
+/*Better to do h2 sizing here for consistency and simplicity*/
+/*Added h1 as well due to Bootstrap limitations for font sizing
+ Scaling on Rem to reflect user base font size settings. Will adjust
+ for users with default larger font in browser*/
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 2.8rem;
+    font-weight:normal;
 }
 #mockup{
     margin-top: -15%;
