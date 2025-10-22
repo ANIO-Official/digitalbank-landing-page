@@ -38,7 +38,7 @@
     <nav class="navbar navbar-expand-lg bg-white px-5">
       <div class="container-fluid px-5">
         <!--logo return to 'home'-->
-        <a class="navbar-brand ms-5" href="#">
+        <a class="navbar-brand" href="#">
           <img src="images/logo-dark.svg" alt="Digital Bank Logo" width="auto" height="100%">
         </a>
         <ul class="navbar-nav fw-normal">
@@ -54,31 +54,36 @@
     </nav>
   </header>
 
-  <main class="">
+  <main>
     <!--Make a div 'container' to hold the BS grid for flexible design-->
     <!--try reverse column for this section on mobile
         Set the background image in CSS,use media query for bg mobile-->
-    <section id="hero" class="px-5">
-      <div class="container-fluid border-2 px-5 h-100">
-        <div class="row d-flex flex-column flex-md-row">
-          <div class="col-4 ms-4 py-5">
-            <div class="card bg-transparent border-0 py-5 mt-5">
-              <div class="card-body">
-                <h1 class="card-title fw-light">Next generation digital banking</h1>
-                <p id="hero-sm-text" class="card-text text-secondary">
-                  Take your financial life online. Your Digitalbank account will be a one-stop-shop
-                  for spending, saving, budgeting, investing, and much more.
-                </p>
-                <button type="button" class="btn-lg rounded-pill px-4 py-2 border-0 me-5 mb-5">Request Invite</button>
+    <div class="hero-bg">
+      <section id="hero" class="container-fluid text-start px-5">
+        <div class="container-fluid border-2 px-5 h-100">
+          <!--Create a grid for Hero statement/title & Mockup side by side-->
+          <div class="row d-flex flex-column flex-md-row">
+            <!--Hero-->
+            <div class="col-4 ms-4 py-5">
+              <div class="card bg-transparent border-0 py-5 mt-5">
+                <div class="card-body ms-4">
+                  <h1 class="card-title fw-light ">Next generation digital banking</h1>
+                  <p id="hero-sm-text" class="card-text text-secondary">
+                    Take your financial life online. Your Digitalbank account will be a one-stop-shop
+                    for spending, saving, budgeting, investing, and much more.
+                  </p>
+                  <button type="button" class="btn-lg rounded-pill px-4 py-2 border-0 me-5 mb-5">Request Invite</button>
+                </div>
               </div>
             </div>
-          </div>
-          <div id="mockup-container" class="col d-flex justify-content-start justify-content-md-end">
-            <img id="mockup" src="images/image-mockups.png" class="w-auto h-auto p-1" />
+            <!--Mockup-->
+            <div class="col d-flex justify-content-start justify-content-md-end">
+              <img id="mockup" src="images/image-mockups.png" class="w-auto h-auto p-1" />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
     <div class="about-bg">
       <section id="about" class="container-fluid text-start m-0 px-5 py-5 ms-5">
         <div id="about-head" class="mt-5 ms-4 px-5">
@@ -136,48 +141,48 @@
       </section>
     </div>
     <div class="articles-bg">
-      <section id="articles-section" class="container text-start my-5">
-        <h2 id="articles-title" class="py-5">Latest Articles</h2>
-        <div class="row row-col-md-4">
-          <div class="col">
+      <section id="articles" class="container-fluid text-start m-0 px-5 py-5 ms-5">
+        <h2 id="articles-title" class="py-5 ms-4 px-5">Latest Articles</h2>
+        <div class="row row-col-md-4 ms-4 px-5">
+          <div class="col me-5 p-1">
             <div class="card border-0">
               <img class="card-img-top" src="images/image-currency.jpg" />
               <div class="card-body">
                 <div class="card-subtitle text-secondary my-2">By Claire Robinson</div>
-                <div class="card-title fw-bold fs-5">Receive money in any currency with no fees</div>
+                <div class="card-title fw-normal fs-5">Receive money in any currency with no fees</div>
                 <p class="card-text text-secondary ">The world is getting smaller and we’re becoming more mobile. So
                   why should you be forced to only receive money in a single …</p>
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col mx-5 p-1">
             <div class="card border-0">
               <img class="card-img-top" src="images/image-restaurant.jpg" />
               <div class="card-body">
                 <div class="card-subtitle text-secondary my-2">By Wilson Hutton</div>
-                <div class="card-title fw-bold fs-5">Treat yourself without worrying about money</div>
+                <div class="card-title fw-normal fs-5">Treat yourself without worrying about money</div>
                 <p class="card-text text-secondary ">Our simple budgeting feature allows you to separate out your
                   spending and set realistic limits each month. That means you …</p>
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col mx-5 p-1">
             <div class="card border-0">
               <img class="card-img-top" src="images/image-plane.jpg" />
               <div class="card-body">
                 <div class="card-subtitle text-secondary my-2">By Wilson Hutton</div>
-                <div class="card-title fw-bold fs-5">Take your Digitalbank card wherever you go</div>
+                <div class="card-title fw-normal fs-5">Take your Digitalbank card wherever you go</div>
                 <p class="card-text text-secondary ">We want you to enjoy your travels. This is why we don’t charge
                   any fees on purchases while you’re abroad. We’ll even …</p>
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col mx-5 p-1">
             <div class="card border-0">
               <img class="card-img-top" src="images/image-confetti.jpg" />
               <div class="card-body">
                 <div class="card-subtitle text-secondary my-2">By Claire Robinson</div>
-                <div class="card-title fw-bold fs-5">Our invite-only Beta accounts are now live!</div>
+                <div class="card-title fw-normal fs-5">Our invite-only Beta accounts are now live!</div>
                 <p class="card-text text-secondary ">After a lot of hard work by the whole team, we’re excited to
                   launch our closed beta. It’s easy to request an invite through ...</p>
               </div>
@@ -188,12 +193,12 @@
     </div>
   </main>
   <footer class="text-white">
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg ms-4">
       <div class="container-fluid ">
         <div class="row w-100 px-5 d-flex align-items-start py-4">
           <!--Column 1 | Logo and socials, Flexbox column stack-->
           <div class="col d-flex flex-column align-items-start ms-5 ps-5">
-            <a class="navbar-brand" href="#"><img src="images/logo-light.svg" alt="Digital Bank Logo" width="auto"
+            <a class="navbar-brand mb-5" href="#"><img src="images/logo-light.svg" alt="Digital Bank Logo" width="auto"
                 height="100%"></a>
             <div id="socials" class="mt-1">
               <ul class="list-group d-flex flex-lg-row">
@@ -225,7 +230,7 @@
           <div class="col d-flex flex-column align-items-end me-5 pe-5">
             <!--logo return to 'home'-->
             <button class="btn-lg rounded-pill px-4 py-2 border-0 me-5" type="button">Request Invite</button>
-            <p class="mt-3">© Digitalbank. All Rights Reserved</p>
+            <p class="copyright mt-3 me-5">© Digitalbank. All Rights Reserved</p>
           </div>
         </div>
       </div>
