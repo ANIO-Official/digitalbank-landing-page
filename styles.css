@@ -98,8 +98,7 @@ h2 {
     body {
         font-size: 0.9rem;
     }
-
-
+    
     .hero-bg {
         background-image: url(images/bg-intro-desktop.svg);
         background-color: hsl(0, 0%, 98%);
@@ -115,7 +114,6 @@ h2 {
         margin-top: -29vw;
         height: 100vw;
         width: auto;
-
     }
 
     .card-body {

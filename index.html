@@ -75,20 +75,6 @@
   </header>
 
   <main>
-    <!--test for better colomn setup
-    <div class="container">
-      <div class="row
-      ">
-        <div class="col-md-4 border border-1 border-warning">
-          Content 1
-        </div>
-        <div class="col-md border border-1 border-warning">
-          Content 2
-        </div>
-      </div>
-    </div>
-    -->
-
     <!--Make a div 'container' to hold the BS grid for flexible design-->
     <!--try reverse column for this section on mobile
         Set the background image in CSS,use media query for bg mobile-->
@@ -111,7 +97,7 @@
                     will be a one-stop-shop for spending, saving, budgeting,
                     investing, and much more.
                   </p>
-                  <div id="hero-button"
+                  <div id="hero-btn"
                     class="d-flex justify-content-center align-items-center d-md-inline justify-content-md-start">
                     <button type="button"
                       class="req-invite btn-lg rounded-pill px-md-4 py-md-2 border-0 me-md-5 mb-md-5">
@@ -201,82 +187,81 @@
       </section>
     </div>
     <div class="articles-bg">
-      <section id="articles" class="container-fluid text-start m-md-0 px-md-5 py-md-5 ms-md-5">
+      <!--Removed container-fluid from this one-->
+      <section id="articles" class="text-start m-md-0 px-md-5 py-md-5 ms-md-5">
         <div>
           <h2 id="articles-title" class="py-5 ms-md-4 px-md-5 text-center text-md-start">Latest Articles</h2>
         </div>
-        <div>
-          <div class="row row-cols-md ms-md-4 px-md-5">
-            <div class="col mx-5 mx-md-0 me-md-5 p-1">
-              <div class="card border-0">
-                <img class="card-img-top" src="images/image-currency.jpg" />
-                <div class="card-body">
-                  <div class="card-subtitle text-secondary my-2">
-                    By Claire Robinson
-                  </div>
-                  <div class="card-title fw-normal fs-5">
-                    Receive money in any currency with no fees
-                  </div>
-                  <p class="card-text text-secondary lh-sm">
-                    The world is getting smaller and we’re becoming more mobile.
-                    So why should you be forced to only receive money in a
-                    single …
-                  </p>
+        <div id="article-grid-container" class="row row-cols-md-6 ms-md-4 px-md-5">
+          <div class="col mx-5 mx-md-0 me-md-5 p-1">
+            <div class="card border-0">
+              <img class="card-img-top" src="images/image-currency.jpg" />
+              <div class="card-body">
+                <div class="card-subtitle text-secondary my-2">
+                  By Claire Robinson
                 </div>
+                <div class="card-title fw-normal fs-5">
+                  Receive money in any currency with no fees
+                </div>
+                <p class="card-text text-secondary lh-sm">
+                  The world is getting smaller and we’re becoming more mobile.
+                  So why should you be forced to only receive money in a
+                  single …
+                </p>
               </div>
             </div>
-            <div class="col mx-5 p-1">
-              <div class="card border-0">
-                <img class="card-img-top" src="images/image-restaurant.jpg" />
-                <div class="card-body">
-                  <div class="card-subtitle text-secondary my-2">
-                    By Wilson Hutton
-                  </div>
-                  <div class="card-title fw-normal fs-5">
-                    Treat yourself without worrying about money
-                  </div>
-                  <p class="card-text text-secondary lh-sm">
-                    Our simple budgeting feature allows you to separate out your
-                    spending and set realistic limits each month. That means you
-                    …
-                  </p>
+          </div>
+          <div class="col mx-5 p-1">
+            <div class="card border-0">
+              <img class="card-img-top" src="images/image-restaurant.jpg" />
+              <div class="card-body">
+                <div class="card-subtitle text-secondary my-2">
+                  By Wilson Hutton
                 </div>
+                <div class="card-title fw-normal fs-5">
+                  Treat yourself without worrying about money
+                </div>
+                <p class="card-text text-secondary lh-sm">
+                  Our simple budgeting feature allows you to separate out your
+                  spending and set realistic limits each month. That means you
+                  …
+                </p>
               </div>
             </div>
-            <div class="col mx-5 p-1">
-              <div class="card border-0">
-                <img class="card-img-top" src="images/image-plane.jpg" />
-                <div class="card-body">
-                  <div class="card-subtitle text-secondary my-2">
-                    By Wilson Hutton
-                  </div>
-                  <div class="card-title fw-normal fs-5">
-                    Take your Digitalbank card wherever you go
-                  </div>
-                  <p class="card-text text-secondary lh-sm">
-                    We want you to enjoy your travels. This is why we don’t
-                    charge any fees on purchases while you’re abroad. We’ll even
-                    …
-                  </p>
+          </div>
+          <div class="col mx-5 p-1">
+            <div class="card border-0">
+              <img class="card-img-top" src="images/image-plane.jpg" />
+              <div class="card-body">
+                <div class="card-subtitle text-secondary my-2">
+                  By Wilson Hutton
                 </div>
+                <div class="card-title fw-normal fs-5">
+                  Take your Digitalbank card wherever you go
+                </div>
+                <p class="card-text text-secondary lh-sm">
+                  We want you to enjoy your travels. This is why we don’t
+                  charge any fees on purchases while you’re abroad. We’ll even
+                  …
+                </p>
               </div>
             </div>
-            <div class="col mx-5 p-1">
-              <div class="card border-0">
-                <img class="card-img-top" src="images/image-confetti.jpg" />
-                <div class="card-body">
-                  <div class="card-subtitle text-secondary my-2">
-                    By Claire Robinson
-                  </div>
-                  <div class="card-title fw-normal fs-5">
-                    Our invite-only Beta accounts are now live!
-                  </div>
-                  <p class="card-text text-secondary lh-sm">
-                    After a lot of hard work by the whole team, we’re excited to
-                    launch our closed beta. It’s easy to request an invite
-                    through ...
-                  </p>
+          </div>
+          <div class="col mx-5 p-1">
+            <div class="card border-0">
+              <img class="card-img-top" src="images/image-confetti.jpg" />
+              <div class="card-body">
+                <div class="card-subtitle text-secondary my-2">
+                  By Claire Robinson
                 </div>
+                <div class="card-title fw-normal fs-5">
+                  Our invite-only Beta accounts are now live!
+                </div>
+                <p class="card-text text-secondary lh-sm">
+                  After a lot of hard work by the whole team, we’re excited to
+                  launch our closed beta. It’s easy to request an invite
+                  through ...
+                </p>
               </div>
             </div>
           </div>
@@ -285,16 +270,18 @@
       </section>
     </div>
   </main>
-  <footer class="text-white">
-    <nav class="navbar navbar-expand-lg ms-4">
-      <div class="container-fluid">
-        <div class="row w-100 px-5 d-flex align-items-start py-4">
+
+  <footer class="text-white mt-3">
+    <nav class="navbar ms-md-4">
+      <div class="container-fluid border border-2">
+        <div class="row w-100 px-md-5 d-flex flex-column flex-md-row align-items-md-start py-4">
           <!--Column 1 | Logo and socials, Flexbox column stack-->
-          <div class="col d-flex flex-column align-items-start ms-5 ps-5">
-            <a class="navbar-brand mb-5" href="#"><img src="images/logo-light.svg" alt="Digital Bank Logo" width="auto"
+          <div class="col d-flex flex-column align-items-center align-items-md-start ms-md-5 ps-md-5">
+            <!--logo return to 'home'-->
+            <a class="navbar-brand mb-2 mb-md-5" href="#"><img src="images/logo-light.svg" alt="Digital Bank Logo" width="auto"
                 height="100%" /></a>
-            <div id="socials" class="mt-1">
-              <ul class="list-group d-flex flex-lg-row">
+            <div id="socials" class="mt-md-1">
+              <ul class="list-group d-flex flex-row">
                 <li class="list-group-item text bg-transparent border-0 px-2">
                   <a href="www.facebook.com"><img src="images/icon-facebook.svg" /></a>
                 </li>
@@ -315,7 +302,7 @@
           </div>
           <!--Column 2 | Sub Bootstrap Grid-->
           <div class="col">
-            <div class="row row-gap-3 row-cols-md-2">
+            <div class="row row-gap-3 row-cols-1 row-cols-md-2 text-center text-md-start">
               <div class="col">
                 <a class="text-white text-decoration-none" href="#">About Us</a>
               </div>
@@ -336,13 +323,14 @@
               </div>
             </div>
           </div>
-          <!--Right/End align, on md make center align-->
-          <div class="col d-flex flex-column align-items-end me-5 pe-5">
-            <!--logo return to 'home'-->
-            <button class="req-invite btn-lg rounded-pill px-4 py-2 border-0 me-5" type="button">
+          <!--Column 3 | Right/End align, on md make center align-->
+          <div class="col d-flex flex-column align-items-center align-items-md-end me-md-5 pe-md-5">
+            <div id="footer-btn" class="mt-2 mt-md-1">
+              <button class="req-invite btn-lg rounded-pill px-md-4 py-md-2 border-0 me-md-5 mb-md-5" type="button">
               Request Invite
             </button>
-            <p class="copyright mt-3 me-5">
+            </div>
+            <p class="copyright mt-3 me-md-5">
               © Digitalbank. All Rights Reserved
             </p>
           </div>
