@@ -35,7 +35,8 @@
 <body class="overflow-x-hidden">
   <header class="ms-5">
     <!--Use BS Navbar component-->
-    <nav class="navbar navbar-expand-lg bg-white px-5">
+    <div id="nav-bg" class="bg-white">
+      <nav id="topnav" class="navbar navbar-expand-lg bg-white px-md-5">
       <div class="container-fluid px-5">
         <!--logo return to 'home'-->
         <a class="navbar-brand" href="#">
@@ -59,10 +60,12 @@
           Invite</button>
       </div>
     </nav>
+    </div>
+    
   </header>
 
   <main>
-    <!--test for better colomn setup-->
+    <!--test for better colomn setup
     <div class="container">
       <div class="row
       ">
@@ -74,21 +77,24 @@
         </div>
       </div>
     </div>
+    -->
 
     <!--Make a div 'container' to hold the BS grid for flexible design-->
     <!--try reverse column for this section on mobile
         Set the background image in CSS,use media query for bg mobile-->
     <div class="hero-bg">
       <section id="hero" class="container-fluid text-start px-md-5">
-        <div class="container-fluid px-md-5 h-md-100">
-          <!--Create a grid for Hero statement/title & Mockup side by side-->
-          <div class="row">
+        <div class="container-fluid px-md-5 h-md-100 ">
+          <!--Create a grid for Hero statement/title & Mockup side by side
+           d-flex d-md-inline d-inline-flex flex-column-reverse 
+          -->
+          <div class="row d-flex d-md-flex flex-column-reverse flex-md-row">
             <!--Hero-->
-            <div class="col-md-4 ms-md-4 py--md-5">
-              <div class="card bg-transparent border-0 py-md-5 mt-md-5">
+            <div class="col-md-4 ms-md-4 py-md-5">
+              <div id="hero-card" class="card border-0 py-4 py-md-5 mt-md-5">
                 <div class="card-body ms-md-4">
-                  <h1 id="hero-title" class="card-title fw-light text-center text-md-start">Next generation digital banking</h1>
-                  <p id="hero-sm-text" class="card-text text-secondary text-center text-md-start">
+                  <h1 id="hero-title" class="card-title fw-light text-center text-md-start mt-md-auto">Next generation digital banking</h1>
+                  <p id="hero-sm-text" class="card-text text-secondary text-center text-md-start pe-2 pe-md-1">
                     Take your financial life online. Your Digitalbank account will be a one-stop-shop
                     for spending, saving, budgeting, investing, and much more.
                   </p>
