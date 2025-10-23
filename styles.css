@@ -67,3 +67,28 @@ h2{
 .copyright{
     color: hsl(233, 8%, 62%)
 }
+
+@media (max-width: 375px){
+    .hero-bg{
+    background-image: url(images/bg-intro-desktop.svg);
+    background-color: hsl(0, 0%, 98%);
+    background-repeat: no-repeat;
+    height: auto;
+}
+    #mockup{
+    margin:auto auto;
+    height: 100vw;
+    width: auto;
+
+}
+    #hero-title{
+        font-size: 2rem;
+    }
+    .card-body{
+        width: 100%;
+        padding: 0;
+    }
+    #hero-sm-text{
+    width: auto;
+    }
+}

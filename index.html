@@ -41,44 +41,67 @@
         <a class="navbar-brand" href="#">
           <img src="images/logo-dark.svg" alt="Digital Bank Logo" width="auto" height="100%">
         </a>
-        <ul class="navbar-nav fw-normal">
-          <li class="nav-item"><a class="nav-link text-body-tertiary mx-2 px-2" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-body-tertiary mx-2 px-2" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link text-body-tertiary mx-2 px-2" href="#">Contact</a></li>
-          <li class="nav-item"><a class="nav-link text-body-tertiary mx-2 px-2" href="#">Blog</a></li>
-          <li class="nav-item"><a class="nav-link text-body-tertiary mx-2 px-2" href="#">Careers</a></li>
-        </ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+          aria-controls="navbarSupportedContent" aria-label="Toggle navigation menu.">
+          <img src="images/icon-hamburger.svg" alt="navbar for mobile.">
+        </button>
+        <div class="collapse navbar-collapse" id="#navMenu">
+          <ul class="navbar-nav fw-normal">
+            <li class="nav-item"><a class="nav-link text-body-tertiary mx-2 px-2" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-body-tertiary mx-2 px-2" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link text-body-tertiary mx-2 px-2" href="#">Contact</a></li>
+            <li class="nav-item"><a class="nav-link text-body-tertiary mx-2 px-2" href="#">Blog</a></li>
+            <li class="nav-item"><a class="nav-link text-body-tertiary mx-2 px-2" href="#">Careers</a></li>
+          </ul>
+        </div>
         <!--Make gradient bg in css-->
-        <button class="btn-lg rounded-pill px-4 py-2 border-0 me-5" type="button">Request Invite</button>
+        <button class="btn-lg rounded-pill px-4 py-2 border-0 me-5 d-none d-lg-block" type="button">Request
+          Invite</button>
       </div>
     </nav>
   </header>
 
   <main>
+    <!--test for better colomn setup-->
+    <div class="container">
+      <div class="row
+      ">
+        <div class="col-md-4 border border-1 border-warning">
+          Content 1
+        </div>
+        <div class="col-md border border-1 border-warning">
+          Content 2
+        </div>
+      </div>
+    </div>
+
     <!--Make a div 'container' to hold the BS grid for flexible design-->
     <!--try reverse column for this section on mobile
         Set the background image in CSS,use media query for bg mobile-->
     <div class="hero-bg">
-      <section id="hero" class="container-fluid text-start px-5">
-        <div class="container-fluid border-2 px-5 h-100">
+      <section id="hero" class="container-fluid text-start px-md-5">
+        <div class="container-fluid px-md-5 h-md-100">
           <!--Create a grid for Hero statement/title & Mockup side by side-->
-          <div class="row d-flex flex-column flex-md-row">
+          <div class="row">
             <!--Hero-->
-            <div class="col-4 ms-4 py-5">
-              <div class="card bg-transparent border-0 py-5 mt-5">
-                <div class="card-body ms-4">
-                  <h1 class="card-title fw-light ">Next generation digital banking</h1>
-                  <p id="hero-sm-text" class="card-text text-secondary">
+            <div class="col-md-4 ms-md-4 py--md-5">
+              <div class="card bg-transparent border-0 py-md-5 mt-md-5">
+                <div class="card-body ms-md-4">
+                  <h1 id="hero-title" class="card-title fw-light text-center text-md-start">Next generation digital banking</h1>
+                  <p id="hero-sm-text" class="card-text text-secondary text-center text-md-start">
                     Take your financial life online. Your Digitalbank account will be a one-stop-shop
                     for spending, saving, budgeting, investing, and much more.
                   </p>
-                  <button type="button" class="btn-lg rounded-pill px-4 py-2 border-0 me-5 mb-5">Request Invite</button>
+                  <div id="hero-button" class="d-flex justify-content-center align-items-center d-md-inline justify-content-md-start">
+                    <button type="button" class="btn-lg rounded-pill px-md-4 py-md-2 border-0 me-md-5 mb-md-5">Request Invite
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
             <!--Mockup-->
-            <div class="col d-flex justify-content-start justify-content-md-end">
-              <img id="mockup" src="images/image-mockups.png" class="w-auto h-auto p-1" />
+            <div class="col d-inline d-md-flex justify-content-start align-items-center justify-content-md-end">
+              <img id="mockup" src="images/image-mockups.png" class="w-md-auto h-md-auto p-md-1" />
             </div>
           </div>
         </div>
