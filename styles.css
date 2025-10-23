@@ -11,6 +11,7 @@ body p {
 .req-invite {
     background: linear-gradient(hsl(136, 64%, 51%), hsl(192, 69%, 51%));
     color: white;
+    font-size: 15px;
 }
 
 footer {
@@ -97,7 +98,10 @@ h2 {
     body {
         font-size: 0.9rem;
     }
-    
+     .req-invite {
+    font-size: 10px;
+    padding: 10px 20px;
+}   
     .hero-bg {
         background-image: url(images/bg-intro-desktop.svg);
         background-color: hsl(0, 0%, 98%);
@@ -163,7 +167,10 @@ for line height
     body {
         font-size: 0.9rem;
     }
-    
+    .req-invite {
+    font-size: 10px;
+    padding: 10px 20px;
+}
     .hero-bg {
         background-image: url(images/bg-intro-desktop.svg);
         background-color: hsl(0, 0%, 98%);
@@ -194,8 +201,8 @@ for line height
 
     #nav-bg {
         padding: 0;
-        margin-left: -10vw;
-        width: max-content;
+        margin-left: -20vw;
+        width: 100vw;
     }
 
     #about-preface {
