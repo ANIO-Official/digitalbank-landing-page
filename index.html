@@ -2,17 +2,17 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
   <!--Add Font | Public Sans-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" />
   <!--Bootstrap CSS Library | CDN-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
   <!--Link CSS Sheet-->
@@ -37,31 +37,41 @@
     <!--Use BS Navbar component-->
     <div id="nav-bg" class="bg-white">
       <nav id="topnav" class="navbar navbar-expand-lg bg-white px-md-5">
-      <div class="container-fluid px-5">
-        <!--logo return to 'home'-->
-        <a class="navbar-brand" href="#">
-          <img src="images/logo-dark.svg" alt="Digital Bank Logo" width="auto" height="100%">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
-          aria-controls="navbarSupportedContent" aria-label="Toggle navigation menu.">
-          <img src="images/icon-hamburger.svg" alt="navbar for mobile.">
-        </button>
-        <div class="collapse navbar-collapse" id="#navMenu">
-          <ul class="navbar-nav fw-normal">
-            <li class="nav-item"><a class="nav-link text-body-tertiary mx-2 px-2" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link text-body-tertiary mx-2 px-2" href="#">About</a></li>
-            <li class="nav-item"><a class="nav-link text-body-tertiary mx-2 px-2" href="#">Contact</a></li>
-            <li class="nav-item"><a class="nav-link text-body-tertiary mx-2 px-2" href="#">Blog</a></li>
-            <li class="nav-item"><a class="nav-link text-body-tertiary mx-2 px-2" href="#">Careers</a></li>
-          </ul>
+        <div class="container-fluid px-5">
+          <!--logo return to 'home'-->
+          <a class="navbar-brand" href="#">
+            <img src="images/logo-dark.svg" alt="Digital Bank Logo" width="auto" height="100%" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+            aria-controls="navbarSupportedContent" aria-label="Toggle navigation menu.">
+            <img src="images/icon-hamburger.svg" alt="navbar for mobile." />
+          </button>
+          <div class="collapse navbar-collapse" id="#navMenu">
+            <ul class="navbar-nav fw-normal">
+              <li class="nav-item">
+                <a class="nav-link text-body-tertiary mx-2 px-2" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-body-tertiary mx-2 px-2" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-body-tertiary mx-2 px-2" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-body-tertiary mx-2 px-2" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-body-tertiary mx-2 px-2" href="#">Careers</a>
+              </li>
+            </ul>
+          </div>
+          <!--Make gradient bg in css-->
+          <button class="btn-lg rounded-pill px-4 py-2 border-0 me-5 d-none d-lg-block" type="button">
+            Request Invite
+          </button>
         </div>
-        <!--Make gradient bg in css-->
-        <button class="btn-lg rounded-pill px-4 py-2 border-0 me-5 d-none d-lg-block" type="button">Request
-          Invite</button>
-      </div>
-    </nav>
+      </nav>
     </div>
-    
   </header>
 
   <main>
@@ -84,7 +94,7 @@
         Set the background image in CSS,use media query for bg mobile-->
     <div class="hero-bg">
       <section id="hero" class="container-fluid text-start px-md-5">
-        <div class="container-fluid px-md-5 h-md-100 ">
+        <div class="container-fluid px-md-5 h-md-100">
           <!--Create a grid for Hero statement/title & Mockup side by side
            d-flex d-md-inline d-inline-flex flex-column-reverse 
           -->
@@ -93,13 +103,18 @@
             <div class="col-md-4 ms-md-4 py-md-5">
               <div id="hero-card" class="card border-0 py-4 py-md-5 mt-md-5">
                 <div class="card-body ms-md-4">
-                  <h1 id="hero-title" class="card-title fw-light text-center text-md-start mt-md-auto">Next generation digital banking</h1>
+                  <h1 id="hero-title" class="card-title fw-light text-center text-md-start mt-md-auto">
+                    Next generation digital banking
+                  </h1>
                   <p id="hero-sm-text" class="card-text text-secondary text-center text-md-start pe-2 pe-md-1">
-                    Take your financial life online. Your Digitalbank account will be a one-stop-shop
-                    for spending, saving, budgeting, investing, and much more.
+                    Take your financial life online. Your Digitalbank account
+                    will be a one-stop-shop for spending, saving, budgeting,
+                    investing, and much more.
                   </p>
-                  <div id="hero-button" class="d-flex justify-content-center align-items-center d-md-inline justify-content-md-start">
-                    <button type="button" class="btn-lg rounded-pill px-md-4 py-md-2 border-0 me-md-5 mb-md-5">Request Invite
+                  <div id="hero-button"
+                    class="d-flex justify-content-center align-items-center d-md-inline justify-content-md-start">
+                    <button type="button" class="btn-lg rounded-pill px-md-4 py-md-2 border-0 me-md-5 mb-md-5">
+                      Request Invite
                     </button>
                   </div>
                 </div>
@@ -114,55 +129,70 @@
       </section>
     </div>
     <div class="about-bg">
-      <section id="about" class="container-fluid text-start m-0 px-5 py-5 ms-5">
-        <div id="about-head" class="mt-5 ms-4 px-5">
-          <h2 id="about-header">Why choose Digitalbank?</h2>
-          <p class="text-secondary mt-4" id="about-preface">We leverage Open Banking to turn your bank account into your
-            financial hub. Control your finances like never before.</p>
+      <section id="about" class="container-fluid text-start m-md-0 px-md-5 py-md-5 ms-md-5">
+        <div id="about-head" class="mt-md-5 ms-md-4 px-5 py-5 py-md-1">
+          <h2 id="about-header" class="text-center text-md-start">
+            Why choose Digitalbank?
+          </h2>
+          <p id="about-preface" class="text-secondary text-center text-md-start mt-4">
+            We leverage Open Banking to turn your bank account into your
+            financial hub. Control your finances like never before.
+          </p>
         </div>
-        <div id="services-container" class="row row-cols-md-4 py-5 ms-2 me-5">
-          <div class="g-col-3 px-4">
-            <div class="card border-0 px-4 bg-transparent">
-              <img class="card-img-icon ms-3" src="images/icon-online.svg" />
+        <div id="services-container" class="row row-cols-md-4 py-5 ms-2 me-5 text-center text-md-start">
+          <div class="g-col-3 px-md-4">
+            <div class="card border-0 px-md-4 bg-transparent">
+              <div>
+                <img class="card-img-icon ms-md-3" src="images/icon-online.svg" />
+              </div>
               <div class="card-body">
                 <h3 class="card-title fs-4 my-3">Online Banking</h3>
-                <p class="card-text text-secondary lh-lg">Our modern web and mobile applications allow you to keep track
-                  of your
-                  finances
-                  wherever you are in the world.</p>
+                <p class="card-text text-secondary">
+                  Our modern web and mobile applications allow you to keep
+                  track of your finances wherever you are in the world.
+                </p>
               </div>
             </div>
           </div>
-          <div class="g-col-3 px-4">
-            <div class="card border-0 px-4 bg-transparent">
-              <img class="card-img-icon ms-3" src="images/icon-budgeting.svg" />
+          <div class="g-col-3 px-md-4">
+            <div class="card border-0 px-md-4 bg-transparent">
+              <div>
+                <img class="card-img-icon ms-md-3" src="images/icon-budgeting.svg" />
+              </div>
               <div class="card-body">
                 <h3 class="card-title fs-4 my-3">Simple Budgeting</h3>
-                <p class="card-text text-secondary lh-lg">See exactly where your money goes each month. Receive
-                  notifications
-                  when you’re close to hitting your limits.</p>
+                <p class="card-text text-secondary">
+                  See exactly where your money goes each month. Receive
+                  notifications when you’re close to hitting your limits.
+                </p>
               </div>
             </div>
           </div>
-          <div class="g-col-3 px-4">
-            <div class="card border-0 px-4 bg-transparent">
-              <img class="card-img-icon ms-3" src="images/icon-onboarding.svg" />
+          <div class="g-col-3 px-md-4">
+            <div class="card border-0 px-md-4 bg-transparent">
+              <div>
+                <img class="card-img-icon ms-md-3" src="images/icon-onboarding.svg" />
+              </div>
               <div class="card-body">
                 <h3 class="card-title fs-4 my-3">Fast Onboarding</h3>
-                <p class="card-text text-secondary lh-lg">We don’t do branches. Open your account in minutes online and
-                  start taking control
-                  of your finances right away.</p>
+                <p class="card-text text-secondary">
+                  We don’t do branches. Open your account in minutes online
+                  and start taking control of your finances right away.
+                </p>
               </div>
             </div>
           </div>
-          <div class="g-col-3 px-3">
-            <div class="card border-0 px-3  bg-transparent">
-              <img class="card-img-icon ms-3" src="images/icon-api.svg" />
+          <div class="g-col-3 px-md-3">
+            <div class="card border-0 px-md-3 bg-transparent">
+              <div>
+                <img class="card-img-icon ms-md-3" src="images/icon-api.svg" />
+              </div>
               <div class="card-body">
                 <h3 class="card-title fs-4 my-3">Open API</h3>
-                <p class="card-text text-secondary lh-lg">Manage your savings, investments, pension, and much more from
-                  one account. Tracking
-                  your money has never been easier.</p>
+                <p class="card-text text-secondary lh-sm">
+                  Manage your savings, investments, pension, and much more
+                  from one account. Tracking your money has never been easier.
+                </p>
               </div>
             </div>
           </div>
@@ -177,10 +207,17 @@
             <div class="card border-0">
               <img class="card-img-top" src="images/image-currency.jpg" />
               <div class="card-body">
-                <div class="card-subtitle text-secondary my-2">By Claire Robinson</div>
-                <div class="card-title fw-normal fs-5">Receive money in any currency with no fees</div>
-                <p class="card-text text-secondary ">The world is getting smaller and we’re becoming more mobile. So
-                  why should you be forced to only receive money in a single …</p>
+                <div class="card-subtitle text-secondary my-2">
+                  By Claire Robinson
+                </div>
+                <div class="card-title fw-normal fs-5">
+                  Receive money in any currency with no fees
+                </div>
+                <p class="card-text text-secondary lh-sm">
+                  The world is getting smaller and we’re becoming more mobile.
+                  So why should you be forced to only receive money in a
+                  single …
+                </p>
               </div>
             </div>
           </div>
@@ -188,10 +225,17 @@
             <div class="card border-0">
               <img class="card-img-top" src="images/image-restaurant.jpg" />
               <div class="card-body">
-                <div class="card-subtitle text-secondary my-2">By Wilson Hutton</div>
-                <div class="card-title fw-normal fs-5">Treat yourself without worrying about money</div>
-                <p class="card-text text-secondary ">Our simple budgeting feature allows you to separate out your
-                  spending and set realistic limits each month. That means you …</p>
+                <div class="card-subtitle text-secondary my-2">
+                  By Wilson Hutton
+                </div>
+                <div class="card-title fw-normal fs-5">
+                  Treat yourself without worrying about money
+                </div>
+                <p class="card-text text-secondary lh-sm">
+                  Our simple budgeting feature allows you to separate out your
+                  spending and set realistic limits each month. That means you
+                  …
+                </p>
               </div>
             </div>
           </div>
@@ -199,10 +243,17 @@
             <div class="card border-0">
               <img class="card-img-top" src="images/image-plane.jpg" />
               <div class="card-body">
-                <div class="card-subtitle text-secondary my-2">By Wilson Hutton</div>
-                <div class="card-title fw-normal fs-5">Take your Digitalbank card wherever you go</div>
-                <p class="card-text text-secondary ">We want you to enjoy your travels. This is why we don’t charge
-                  any fees on purchases while you’re abroad. We’ll even …</p>
+                <div class="card-subtitle text-secondary my-2">
+                  By Wilson Hutton
+                </div>
+                <div class="card-title fw-normal fs-5">
+                  Take your Digitalbank card wherever you go
+                </div>
+                <p class="card-text text-secondary lh-sm">
+                  We want you to enjoy your travels. This is why we don’t
+                  charge any fees on purchases while you’re abroad. We’ll even
+                  …
+                </p>
               </div>
             </div>
           </div>
@@ -210,10 +261,17 @@
             <div class="card border-0">
               <img class="card-img-top" src="images/image-confetti.jpg" />
               <div class="card-body">
-                <div class="card-subtitle text-secondary my-2">By Claire Robinson</div>
-                <div class="card-title fw-normal fs-5">Our invite-only Beta accounts are now live!</div>
-                <p class="card-text text-secondary ">After a lot of hard work by the whole team, we’re excited to
-                  launch our closed beta. It’s easy to request an invite through ...</p>
+                <div class="card-subtitle text-secondary my-2">
+                  By Claire Robinson
+                </div>
+                <div class="card-title fw-normal fs-5">
+                  Our invite-only Beta accounts are now live!
+                </div>
+                <p class="card-text text-secondary lh-sm">
+                  After a lot of hard work by the whole team, we’re excited to
+                  launch our closed beta. It’s easy to request an invite
+                  through ...
+                </p>
               </div>
             </div>
           </div>
@@ -223,53 +281,74 @@
   </main>
   <footer class="text-white">
     <nav class="navbar navbar-expand-lg ms-4">
-      <div class="container-fluid ">
+      <div class="container-fluid">
         <div class="row w-100 px-5 d-flex align-items-start py-4">
           <!--Column 1 | Logo and socials, Flexbox column stack-->
           <div class="col d-flex flex-column align-items-start ms-5 ps-5">
             <a class="navbar-brand mb-5" href="#"><img src="images/logo-light.svg" alt="Digital Bank Logo" width="auto"
-                height="100%"></a>
+                height="100%" /></a>
             <div id="socials" class="mt-1">
               <ul class="list-group d-flex flex-lg-row">
-                <li class="list-group-item text bg-transparent border-0 px-2"><a href="www.facebook.com"><img
-                      src="images/icon-facebook.svg" /></a></li>
-                <li class="list-group-item text bg-transparent border-0 px-2"><a href="www.youtube.com"><img
-                      src="images/icon-youtube.svg" /></a></li>
-                <li class="list-group-item text bg-transparent border-0 px-2"><a href="www.x.com"><img
-                      src="images/icon-twitter.svg" /></a></li>
-                <li class="list-group-item text bg-transparent border-0 px-2"><a href="www.pinterest.com"><img
-                      src="images/icon-pinterest.svg" /></a></li>
-                <li class="list-group-item text bg-transparent border-0 px-2"><a href="www.instagram.com"><img
-                      src="images/icon-instagram.svg" /></a></li>
+                <li class="list-group-item text bg-transparent border-0 px-2">
+                  <a href="www.facebook.com"><img src="images/icon-facebook.svg" /></a>
+                </li>
+                <li class="list-group-item text bg-transparent border-0 px-2">
+                  <a href="www.youtube.com"><img src="images/icon-youtube.svg" /></a>
+                </li>
+                <li class="list-group-item text bg-transparent border-0 px-2">
+                  <a href="www.x.com"><img src="images/icon-twitter.svg" /></a>
+                </li>
+                <li class="list-group-item text bg-transparent border-0 px-2">
+                  <a href="www.pinterest.com"><img src="images/icon-pinterest.svg" /></a>
+                </li>
+                <li class="list-group-item text bg-transparent border-0 px-2">
+                  <a href="www.instagram.com"><img src="images/icon-instagram.svg" /></a>
+                </li>
               </ul>
             </div>
           </div>
           <!--Column 2 | Sub Bootstrap Grid-->
           <div class="col">
             <div class="row row-gap-3 row-cols-md-2">
-              <div class="col"><a class="text-white text-decoration-none" href="#">About Us</a></div>
-              <div class="col"><a class="text-white text-decoration-none" href="#">Careers</a></div>
-              <div class="col"><a class="text-white text-decoration-none" href="#">Contact</a></div>
-              <div class="col"><a class="text-white text-decoration-none" href="#">Support</a></div>
-              <div class="col"><a class="text-white text-decoration-none" href="#">Blog</a></div>
-              <div class="col"><a class="text-white text-decoration-none" href="#">Privacy Policy</a></div>
+              <div class="col">
+                <a class="text-white text-decoration-none" href="#">About Us</a>
+              </div>
+              <div class="col">
+                <a class="text-white text-decoration-none" href="#">Careers</a>
+              </div>
+              <div class="col">
+                <a class="text-white text-decoration-none" href="#">Contact</a>
+              </div>
+              <div class="col">
+                <a class="text-white text-decoration-none" href="#">Support</a>
+              </div>
+              <div class="col">
+                <a class="text-white text-decoration-none" href="#">Blog</a>
+              </div>
+              <div class="col">
+                <a class="text-white text-decoration-none" href="#">Privacy Policy</a>
+              </div>
             </div>
           </div>
           <!--Right/End align, on md make center align-->
           <div class="col d-flex flex-column align-items-end me-5 pe-5">
             <!--logo return to 'home'-->
-            <button class="btn-lg rounded-pill px-4 py-2 border-0 me-5" type="button">Request Invite</button>
-            <p class="copyright mt-3 me-5">© Digitalbank. All Rights Reserved</p>
+            <button class="btn-lg rounded-pill px-4 py-2 border-0 me-5" type="button">
+              Request Invite
+            </button>
+            <p class="copyright mt-3 me-5">
+              © Digitalbank. All Rights Reserved
+            </p>
           </div>
         </div>
       </div>
-
     </nav>
   </footer>
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Amanda Ogletree</a>.
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+      href="#">Amanda Ogletree</a>.
   </div>
 </body>
 

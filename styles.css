@@ -3,6 +3,9 @@ body{
     font-family: 'Public Sans';
     font-size: 18px;
 }
+body p{
+    line-height: 2;
+}
 button{
     background: linear-gradient(hsl(136, 64%, 51%), hsl(192, 69%, 51%));
     color: white;
@@ -51,9 +54,6 @@ h2{
     margin-right: -21.5%;
 }
 
-#about-head{
-    width: fit-content;
-}
 #about-preface{
     width: 32vw;
 }
@@ -94,12 +94,20 @@ to do so. Attempts also failed to do so.*/
     #hero-card{
         background-color: hsl(0, 0%, 98%);
     }
-    #hero-title{
+    h1{
         font-size: 2.4rem;
+    }
+    h2{
+        font-size: 1.9rem;
+    }
+    body{
+        font-size: 0.9rem;
+    }
+    body p{
+        line-height: 1.25;
     }
     .card-body{
         width: 100%;
-        font-size: 0.9rem;
     }
     #hero-sm-text{
     width: auto;
@@ -112,4 +120,11 @@ to do so. Attempts also failed to do so.*/
         margin-left: -10vw;
         width:max-content;
     }
+    #about-preface{
+    width: inherit;
+}
+/*Cannot use Bootstrap responsive shorthand
+for line height
+*/
+
 }
