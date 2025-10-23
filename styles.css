@@ -1,43 +1,52 @@
-body{
+body {
     color: hsl(233, 26%, 24%);
     font-family: 'Public Sans';
     font-size: 18px;
 }
-body p{
+
+body p {
     line-height: 2;
 }
-button{
+/*Invite Button Specific Colors*/
+.req-invite {
     background: linear-gradient(hsl(136, 64%, 51%), hsl(192, 69%, 51%));
     color: white;
 }
-footer{
+
+footer {
     background-color: hsl(233, 26%, 24%);
     font-family: 'Public Sans';
 }
+
 /*Better to do h2 sizing here for consistency and simplicity*/
 /*Added h1 as well due to Bootstrap limitations for font sizing
  Scaling on Rem to reflect user base font size settings. Will adjust
  for users with default larger font accessibility settings in browser*/
-h1{
+h1 {
     font-size: 4rem;
 }
-h2{
+
+h2 {
     font-size: 2.8rem;
-    font-weight:normal;
+    font-weight: normal;
 }
+
 /*Specific Background colors and setups*/
-#hero-card{
+#hero-card {
     background-color: transparent;
 }
-.articles-bg{
+
+.articles-bg {
     background-color: hsl(0, 0%, 98%);
     margin-top: -3vw;
     height: 37vw;
 }
-.about-bg{
+
+.about-bg {
     background-color: hsl(220, 16%, 96%);
 }
-.hero-bg{
+
+.hero-bg {
     background-image: url(images/bg-intro-desktop.svg);
     background-color: hsl(0, 0%, 98%);
     background-repeat: no-repeat;
@@ -45,86 +54,103 @@ h2{
     background-position-y: -15vw;
     height: 670px;
 }
+
 /*Area Sizing specifics*/
-#hero-sm-text{
+#hero-sm-text {
     width: 21vw;
 }
-#mockup{
+
+#mockup {
     margin-top: -15%;
     margin-right: -21.5%;
 }
 
-#about-preface{
+#about-preface {
     width: 32vw;
 }
-.card-img-icon{
+
+.card-img-icon {
     width: 65px;
     height: 65px;
 }
-.card-img-top{
+
+.card-img-top {
     height: 200px;
 }
-.card-subtitle{
+
+.card-subtitle {
     font-size: small;
 }
-.copyright{
+
+.copyright {
     color: hsl(233, 8%, 62%)
 }
 
-@media (max-width: 375px){
-    .hero-bg{
-    background-image: url(images/bg-intro-desktop.svg);
-    background-color: hsl(0, 0%, 98%);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: -90vw;
-    background-position-x: -40vw;
-    height: auto;
-}
-    #mockup{
-    margin:auto auto;
-    margin-top: -29vw;
-    height: 100vw;
-    width: auto;
-
-}
-/*Attempted to change bg color with Bootstrap
-on breakpoints, documentation showed no options
-to do so. Attempts also failed to do so.*/
-    #hero-card{
-        background-color: hsl(0, 0%, 98%);
-    }
-    h1{
+@media (max-width: 375px) {
+    h1 {
         font-size: 2.4rem;
     }
-    h2{
+
+    h2 {
         font-size: 1.9rem;
     }
-    body{
+
+    body {
         font-size: 0.9rem;
     }
-    body p{
-        line-height: 1.25;
+
+
+    .hero-bg {
+        background-image: url(images/bg-intro-desktop.svg);
+        background-color: hsl(0, 0%, 98%);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -90vw;
+        background-position-x: -40vw;
+        height: auto;
     }
-    .card-body{
+
+    #mockup {
+        margin: auto auto;
+        margin-top: -29vw;
+        height: 100vw;
+        width: auto;
+
+    }
+
+    .card-body {
         width: 100%;
     }
-    #hero-sm-text{
-    width: auto;
+
+    #hero-sm-text {
+        width: auto;
     }
-    #topnav{
-       width: inherit;
+
+    #topnav {
+        width: inherit;
     }
-    #nav-bg{
+
+    #nav-bg {
         padding: 0;
         margin-left: -10vw;
-        width:max-content;
+        width: max-content;
     }
-    #about-preface{
-    width: inherit;
-}
-/*Cannot use Bootstrap responsive shorthand
+
+    #about-preface {
+        width: inherit;
+    }
+
+    /*Attempted to change bg color with Bootstrap
+on breakpoints, documentation showed no options
+to do so. Attempts also failed to do so.*/
+    #hero-card {
+        background-color: hsl(0, 0%, 98%);
+    }
+
+    /*Cannot use Bootstrap responsive shorthand
 for line height
 */
-
+    body p {
+        line-height: 1.25;
+    }
 }
