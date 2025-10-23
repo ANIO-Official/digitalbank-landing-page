@@ -150,3 +150,69 @@ for line height
         line-height: 1.25;
     }
 }
+
+@media (max-width: 1440px) {
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    h2 {
+        font-size: 1.9rem;
+    }
+
+    body {
+        font-size: 0.9rem;
+    }
+    
+    .hero-bg {
+        background-image: url(images/bg-intro-desktop.svg);
+        background-color: hsl(0, 0%, 98%);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -90vw;
+        background-position-x: -40vw;
+        height: auto;
+    }
+
+    #mockup {
+        margin: auto auto;
+        margin-top: -29vw;
+        height: 100vw;
+        width: auto;
+    }
+
+    .card-body {
+        width: 100%;
+    }
+    #hero-sm-text {
+        width: auto;
+    }
+
+    #topnav {
+        width: inherit;
+    }
+
+    #nav-bg {
+        padding: 0;
+        margin-left: -10vw;
+        width: max-content;
+    }
+
+    #about-preface {
+        width: inherit;
+    }
+
+    /*Attempted to change bg color with Bootstrap
+on breakpoints, documentation showed no options
+to do so. Attempts also failed to do so.*/
+    #hero-card {
+        background-color: hsl(0, 0%, 98%);
+    }
+
+    /*Cannot use Bootstrap responsive shorthand
+for line height
+*/
+    body p {
+        line-height: 1.25;
+    }
+}
