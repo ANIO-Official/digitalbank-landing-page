@@ -126,7 +126,7 @@
             financial hub. Control your finances like never before.
           </p>
         </div>
-        <div id="services-container" class="row row-cols-md-4 py-md-5 ms-md-2 me-2 me-md-5 text-center text-md-start">
+        <div id="services-grid-container" class="row row-cols-md-4 py-md-5 ms-md-2 me-2 me-md-5 text-center text-md-start">
           <div class="g-col-3 px-md-4">
             <div class="card border-0 px-md-4 bg-transparent">
               <div>
@@ -188,12 +188,12 @@
     </div>
     <div class="articles-bg">
       <!--Removed container-fluid from this one-->
-      <section id="articles" class="text-start m-md-0 px-md-5 py-md-5 ms-md-5">
-        <div>
-          <h2 id="articles-title" class="py-5 ms-md-4 px-md-5 text-center text-md-start">Latest Articles</h2>
+      <section id="articles" class="container-fluid text-start m-md-0 px-md-5 py-md-5 ms-md-5">
+        <div id="article-head" class="py-5 ms-md-4 px-md-5">
+          <h2 id="articles-title" class="text-center text-md-start">Latest Articles</h2>
         </div>
-        <div id="article-grid-container" class="row row-cols-md-6 ms-md-4 px-md-5">
-          <div class="col mx-5 mx-md-0 me-md-5 p-1">
+        <div id="article-grid-container" class="row row-cols-1 row-cols-md-6 px-5">
+          <div class="col mx-md-5 mx-md-0 me-md-5 p-1">
             <div class="card border-0">
               <img class="card-img-top" src="images/image-currency.jpg" />
               <div class="card-body">
@@ -211,7 +211,7 @@
               </div>
             </div>
           </div>
-          <div class="col mx-5 p-1">
+          <div class="col mx-md-5 p-1">
             <div class="card border-0">
               <img class="card-img-top" src="images/image-restaurant.jpg" />
               <div class="card-body">
@@ -229,7 +229,7 @@
               </div>
             </div>
           </div>
-          <div class="col mx-5 p-1">
+          <div class="col mx-md-5 p-1">
             <div class="card border-0">
               <img class="card-img-top" src="images/image-plane.jpg" />
               <div class="card-body">
@@ -247,7 +247,7 @@
               </div>
             </div>
           </div>
-          <div class="col mx-5 p-1">
+          <div class="col mx-md-5 p-1">
             <div class="card border-0">
               <img class="card-img-top" src="images/image-confetti.jpg" />
               <div class="card-body">
@@ -273,7 +273,7 @@
 
   <footer class="text-white mt-3">
     <nav class="navbar ms-md-4">
-      <div class="container-fluid border border-2">
+      <div class="container-fluid">
         <div class="row w-100 px-md-5 d-flex flex-column flex-md-row align-items-md-start py-4">
           <!--Column 1 | Logo and socials, Flexbox column stack-->
           <div class="col d-flex flex-column align-items-center align-items-md-start ms-md-5 ps-md-5">

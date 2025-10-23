@@ -39,7 +39,6 @@ h2 {
 .articles-bg {
     background-color: hsl(0, 0%, 98%);
     margin-top: -3vw;
-    height: 37vw;
 }
 
 .about-bg {
@@ -75,7 +74,7 @@ h2 {
 }
 
 .card-img-top {
-    height: 200px;
+    height: 21.5vh;
 }
 
 .card-subtitle {
@@ -119,7 +118,6 @@ h2 {
     .card-body {
         width: 100%;
     }
-
     #hero-sm-text {
         width: auto;
     }
